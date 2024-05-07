@@ -1,7 +1,7 @@
 from pytube import YouTube
 from sys import argv
 
-uLink = "https://www.youtube.com/watch?v=kI4bDaZ83g4&pp=ygUPMW1pbiBtZWRpdGF0aW9u"
+uLink =input("Enter Youtube link : ")
 # link = argv[1]
 yt = YouTube(uLink)
 
