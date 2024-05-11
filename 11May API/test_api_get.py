@@ -1,9 +1,30 @@
 import requests
+#pip install requests
+# Post create
+# get is fetch/ read /
+# put and patch update
+# delete
+#
+# Api testing validating for better quality UI or api mobile app deskapp testing
+#     API testing
+#
+# send valid requestshave valid response
+# validate from response
+# 1 status code
+# 2 headers
+# 3 response body parameters
+# size
+# restime :perfromtesting
+#
+
+
+
 import pytest
 
 ENDPOINT = "https://todo.pixegami.io"
 
 response = requests.get(ENDPOINT)
+
 # print(response)
 data = response.json()
 
