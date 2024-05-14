@@ -44,7 +44,10 @@ def test_create():
         "task_id": "stateside",
         "is_done": False
     }
-    response_p = requests.put(ENDPOINT+ "/create-task", json=payload)
-    assert response_p.status_code == 200
-    data = response_p.json()
+    create_task_response = requests.put(ENDPOINT+ "/create-task", json=payload)
+    assert create_task_response.status_code == 200
+    data = create_task_response.json()
     print(data)
+    task_id = data["task"]["task_id"]
+    get_task_response = requests.get(ENDPOINT+ f"/get-task/{task_id}")
+    assert get_task_response.status_code == 200
