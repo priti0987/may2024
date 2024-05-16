@@ -69,6 +69,8 @@ def test_can_update_task():
     assert get_task_data1["content"]== new_payload_update["content"]
     assert get_task_data1["is_done"]== new_payload_update["is_done"]
 
+def test_can_list_tasks():
+    pass
 def update_task(payload):
     return requests.put(ENDPOINT+ "/update-task",json=payload)
 

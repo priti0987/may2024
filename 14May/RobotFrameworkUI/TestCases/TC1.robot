@@ -9,6 +9,7 @@ Library    XML
 LoginTest
     Open Browser        https://demo.nopcommerce.com/      chrome
     Maximize Browser Window
+    log           priti
     Click Link    //a[contains(@href,'login')]
     Sleep    5
     @{ele}=   Get WebElements    //input
