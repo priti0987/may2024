@@ -1,12 +1,10 @@
-name ="priti"
-
-# print(len(name))
-count = 0
-for i in name:
-    count = count+1
-    print(i)
-    # print(name[i])
-
-print(name[0])
-print(name[1])
-# print("count = ",count)
+# #
+#
+# #print name , class , fav col
+# #fav game
+#
+# #cal len all
+name = "priti"
+# print(name)
+# print(f"length of {name} is {len(name)}")
+# print("lenght is ")
